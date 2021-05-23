@@ -8,7 +8,7 @@ Copula based Stochastic Frontier Quantile Model
 Estimating Copula based Stochastic Frontier Quantile Model
 }
 \usage{
-sfa(Y=Y,X=X,family=1,tau=0.5,RHO=0.5,LB=-0.99,UB=0.99)
+copSQM(Y=Y,X=X,family=1,tau=0.5,RHO=0.5,LB=-0.99,UB=0.99)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

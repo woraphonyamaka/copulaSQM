@@ -77,8 +77,6 @@ copSQM=function(Y,X,family,tau,RHO,LB,UB){
 
 
   # start here
-
-
   cc=coef(lm(Y~X))
   K=length(cc)
   if (family==2){
