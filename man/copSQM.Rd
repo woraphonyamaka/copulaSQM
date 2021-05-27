@@ -54,6 +54,7 @@ library(mvtnorm)
 library("VineCopula")
 library("frontier")
 library(ald)
+library("LaplacesDemon")
 
 # example included in FRONTIER 4.1 (cross-section data)
 data(front41Data)

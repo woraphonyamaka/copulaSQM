@@ -5,9 +5,15 @@
 # Chiang Mai University
 #
 #
-ptALD = function(u, sigu,tau){
-  cdf_u = 2* (pALD(u, mu = 0, sigma = sigu, p=tau, lower.tail = TRUE)- 0.5)
-  return(cdf_u)}
+
+ptALD <- function(u, sigu,tau){
+  ptrunc(u, "alaplace", a=0, b=Inf,location=0, scale=sigu, kappa=tau)
+}
+
+rtALD <- function(n, mean, sigu,tau){
+  rtrunc(n, "alaplace", a=0, b=Inf,location=mean, scale=sigu, kappa=tau)
+}
+
 
 
 ## Main Function
@@ -132,7 +138,7 @@ copSQM=function(Y,X,family,tau,RHO,LB,UB){
 #library("VineCopula")
 #library("frontier")
 #library(ald)
-
+#library("LaplacesDemon")
 
 # example included in FRONTIER 4.1 (cross-section data)
 #data(front41Data)

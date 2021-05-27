@@ -1,12 +1,11 @@
 Package: copulaSQM
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Copula based Stochastic Frontier Quantile Model
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Dr.Woraphon Yamaka
+Maintainer: The package maintainer <woraphon.econ@gmail.com>
+Description: Estimating Copula based Stochastic Frontier Quantile Model.
+License: COEE-07
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.0.2
